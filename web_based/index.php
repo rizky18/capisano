@@ -1,11 +1,18 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="description" content="Catering Pilih Pesan Online">
-<meta name="keywords" content="Capisano, Catering Online, Catering">
-<meta name="author" content="Capisano">
-<meta name="robots" content="index, follow">
+<?php
+if(array_key_exists('menu', $_GET)){
+	$menu = $_GET['menu'];
+}
+else{
+	$menu = "Home";
+}
+
+require("login.php");
+
+require("header.php");
+
 <title>Halaman Awal</title>
 </head>
 <body>
